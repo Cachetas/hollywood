@@ -1,0 +1,48 @@
+<table class="menu">
+    <tr class="navegador">
+        <th class="logo">
+            <header class="cabecalho">
+                <a href="/">
+                    <h1>Hollywood</h1>
+                </a>
+            </header>
+        </th>
+
+        <th class="vazio">
+
+        </th>
+    </tr>
+</table>
+<section id="zonaRegisto">
+    <nav class="formRegisto">
+        <fieldset name="registo" class="formRegisto">
+
+            {{#if tooSmall}}         
+              <div class="error">
+                <p>{{tooSmall}}</p>
+            </div>
+            {{/if}}
+            {{#if message}}
+            <div class="error">
+                <p>{{message}}</p>
+            </div>
+            {{/if}}
+            
+            <form action="/register" method="POST" class="formRegisto">
+                <h1 id="tituloRegisto">Novo Utilizador</h1>
+                <label for="name"></label>
+                    <input type="text" id="novoNome" name="name" placeholder="utilizador" value={{name}}>
+                <label for="password"></label>
+                    <input type="email" id="novoMail" name="email" placeholder="exemplo@mail.com" value={{email}}>
+                <label for="password"></label>
+                    <input type="password" id="novaPass" name="password" placeholder="password">
+
+
+                <p><input type="submit" value="Enviar" id="botaoRegistar"></p>
+                <!--<p><button type="submit" value="Enviar" id="botaoRegistar">Enviar</button></p>-->
+                <p>Já tem conta? Carregue <a href="/login" id="retornarLogin">aqui.</a></p> 
+
+            </form>
+        </fieldset>
+    </nav>
+</section>

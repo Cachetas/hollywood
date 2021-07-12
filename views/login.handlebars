@@ -1,0 +1,60 @@
+  <table class="menu">
+            <tr class="navegador">
+                <th class="logo">
+                    <header class="cabecalho">
+                        <a href="/">
+                            <h1>Hollywood</h1>
+                        </a>
+                    </header>
+                </th>
+
+                <th class="vazio">
+
+                </th>
+            </tr>
+        </table>
+
+        <nav>
+            <fieldset name="login">
+                 {{#if message}}
+            <div class="error">
+                <p>{{message}}</p>
+            </div>
+            {{/if}}
+
+                {{#if messageOk}}
+            <div class="changepwd">
+                <p>{{messageOk}}</p>
+            </div>
+            {{/if}}
+            
+
+                <form action="/login" method="POST" name="login">
+                    <h1>Iniciar Sessão</h1>
+
+                    <p>
+                        <label for="loginId" name="login">
+                            <input type="email" id="loginId" 
+                            name="email" placeholder="exemplo@email.com"
+                            value={{#if email}}
+                                    {{email}}
+                                    {{/if}}>
+                        </label>
+                            <br>
+                        <label for="passwordId" name="login"></label>
+                            <input type="password" id="passwordId" name="password" placeholder="password">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="btnLogin">
+                            <input type="submit" id="btnLogin" name="Enviar" value="Iniciar Sessão">
+                        </label>
+                    </p>
+                    <p>
+                        <a id="registar" href="/register">Registe-se</a>
+                    </p>
+
+                </form>
+            </fieldset>
+        </nav>
+        </table>

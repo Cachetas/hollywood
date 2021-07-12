@@ -1,0 +1,436 @@
+html, body{
+    background-color: #000000;
+    /*background-size: cover;*/
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit; 
+    cursor:
+    pointer;
+}
+
+
+table.menu {
+    width: 97%;
+    height: 10%;
+    padding-bottom: 25px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1)); 
+    /* vertical-align: middle; */
+    /* margin-bottom: -250px; */
+}
+ 
+
+
+
+.cabecalho:hover {
+    cursor: pointer;
+  
+}
+
+th.logo {
+    color: #428dca;
+    text-align: center;
+    vertical-align: middle;    
+    width: 100%;
+    margin-top: 12%;
+    margin-left: 15%;
+    float: left;
+}
+ 
+
+
+
+
+/*
+-----------------------MENU------------------------------------
+*/
+
+
+
+
+th.menu {
+    vertical-align: middle;
+    width: 90%;   
+}
+
+.menuLista{
+    width: 100%;
+    /*height: 100%;*/
+    float: left;
+}
+
+.menuLista > li {
+    display: inline;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    height: 100%;
+    margin: auto;
+    margin-right: 1%;
+}
+
+.menuLista > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 0;
+}
+
+.menuLista > li > a:hover {
+    color: #428dca;
+    cursor: pointer;
+}
+
+
+#logout {
+   
+    position: relative;
+    
+    float: left;
+    color: #929292;
+    font-size: 13px;
+    text-align: center;
+    
+    display: none;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+   
+    padding-top: 6%;
+    padding-bottom: 2%;
+    border-top: 1px solid #FFFFFF;
+    
+}
+
+
+li#login:hover > * > #logout {
+    display: inline;
+}
+ #logout:hover {
+    display: inline;
+    color: #428dca;
+    cursor: pointer;
+
+} 
+
+
+.menuLista > li > * >a:hover {
+    color: #428dca;
+    cursor: pointer;
+}
+
+.menuLista > li > * > input:hover {
+    color: #428dca;
+    cursor: pointer;
+}
+
+li#pesquisa, li#login, li#liBarraPesquisa {  
+    /*height: 100%;*/
+    float: right;
+    display: block;    
+   }
+
+
+
+    
+   li#liBarraPesquisa {
+    margin-right: 0;
+    margin-top: 3px;
+    border: 1px solid white;
+    border-radius: 10px
+   
+   }
+
+
+ 
+   li#login {
+        margin-right: 5%;
+        margin-left: -2%;
+        width: 12%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        border: 1px solid white;
+        border-radius: 10px;
+   }
+
+   li#pesquisa {
+        margin-right: 2%;
+        width: 5%;
+        /*height: 100%;*/
+        
+   }
+
+   #lupa {
+    margin-top: 0px; 
+    margin-bottom: -13px;
+    border: 0px;
+   }
+
+
+
+
+
+a.btnMenu{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 100%;
+    
+}
+
+
+
+
+
+   
+    /*
+    ---------------INPUT-----------------------------
+    */
+
+
+
+    input {
+        position: relative;
+        text-align: center;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        width: 150px;
+        height: 25px;
+    }
+
+
+input.btnMenu{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 100%;
+    border:0;
+    
+}
+
+input#passwordId, input#loginId {
+    margin-top: 0px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+input#botaoRegistar, input#btnLogin, input#alterarPassword {
+    
+    width: 100px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+input#botaoRegistar:hover, input#btnLogin:hover,
+input#alterarPassword:hover {
+    cursor: pointer;
+    border: 2px solid #428dca;
+}
+
+fieldset.formRegisto {
+    padding-bottom: 5%;
+}
+
+fieldset.alterarPassword {
+    margin: auto;
+}
+
+input#novoNome, 
+input#novoMail {
+    margin: auto;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+input#novaPass {
+    margin: auto;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+
+
+input#addFavoritos:hover {
+
+    cursor: pointer;
+    border: 2px solid #428dca;
+
+}
+
+#retornarLogin {
+    text-decoration: underline;
+    color: #428dca;
+}
+#retornarLogin:hover {
+
+    color: #a2cbec;
+    cursor: pointer;
+}
+
+
+li#liBarraPesquisa {
+    display: none;
+    }
+
+input#barraPesquisa {
+        height: 18px;
+        width: auto;
+        color: #ffffff;
+        background-color: #000000;
+}
+
+
+
+
+
+/*
+-----------------TABLE------------------------------
+*/
+
+
+table.filmes {  
+    
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.85); 
+    margin-top: 1%;
+    width:100%;
+}
+
+
+table.filmes > * > tr > * > * > * {
+    border: 5px solid #428dca;
+    margin: 1%;
+    cursor: pointer;
+    height: 250px;
+    margin: 3px;
+    margin-bottom: 20px;   
+    margin-top: 0;
+  }
+
+  table.filmes > * > tr > * > * >:hover  {
+    border: 5px solid #FF0000; 
+    border-radius: 15px;
+  }
+
+h2, h3, h4, p {
+    display: block;
+}
+
+.trailer { 
+    /* min-height: calc(100vh - 50px); */
+    display: inline;
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    max-width: 100%;
+    overflow: hidden; 
+    margin: auto;
+}
+
+.trailer iframe { 
+    position: absolute; 
+    top: 25%; 
+    left: 25%; 
+    width: 50%; 
+    height: 50%; 
+}
+
+
+.info {
+    
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 14px;
+    top: 80%;
+    left: 25%;
+    background-color:rgba(36, 36, 36, 0.75);
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 2%; 
+    
+}
+
+
+.info p, .info h1, .info h2,
+.info h3, .info h4{
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+input.addFavoritos, input.back {
+    margin: auto;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-top: 2%;
+}
+
+
+
+.barralateral {
+    display: inline;
+    top: 100%; 
+}
+
+.rodape {
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
+    
+    /* overflow: hidden; */ 
+    /* vertical-align: bottom; */
+    color: grey;   
+}
+
+.rodape > p {
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+.rodapeIndex {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+
+    /* overflow: hidden; */ 
+    /* vertical-align: bottom; */
+    color: grey;   
+}
+
+
+.rodapeIndex > p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

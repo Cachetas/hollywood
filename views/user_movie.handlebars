@@ -1,0 +1,112 @@
+<table class="menu">
+    <tr class="navegador">
+        <th class="logo">
+            <header class="cabecalho">
+
+                <a href="/home">
+                    <h1>Hollywood</h1>
+                </a>
+            </header>
+        </th>
+
+        <th class="menu">
+            <nav class="menu">
+                <ul class="menuLista">
+
+                    <li>
+                        <a href="/home">
+                            <input type="button" class="btnMenu" value="Filmes">
+                            </input>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/favorites">
+                            <input type="button" class="btnMenu" value="Favoritos" onclick="favAccess()">
+                            </input>
+
+                        </a>
+                    </li>
+
+                    <li id="login">
+                        <a id="loginU" href="/profile">
+                            {{name}}
+                        </a>
+                        <a href="/logout">
+                            <p id="logout">Terminar Sessão</p>
+                        </a>
+                    </li>
+
+
+                    <li id="pesquisa">
+
+                        <a id="pesquisaA" onclick="hide()">
+                            <img id="lupa" src="img/lupa.png" alt="lupa" srcset="img/lupa.svg" height="35">
+                        </a>
+                    </li>
+
+                    <li id="liBarraPesquisa"><input id="barraPesquisa" type="text" placeholder="nome de filme" /></li>
+                </ul>
+            </nav>
+        </th>
+    </tr>
+</table>
+
+<div class="trailer">
+    {{#if message}}
+    {{{message}}}
+    {{/if}}
+
+    <iframe src="{{trailer}}" frameborder="0"
+        allow="autoplay; clipboard-write encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1">
+    </iframe>
+</div>
+<section class="info">
+
+    <h2>Titulo Filme: <a id="tituloFilme"></a></h2>
+    <p>{{movie_title}}</p>
+
+    <article name="artigo">
+        <h3>Sinopse:<a id="synopse"></a></h3>
+        <p>{{description}}</p>
+
+    </article>
+    <p class="barraLateral">
+
+    <p>Realizador: <a id="realizador"></a></p>
+    <p>{{director}}</p>
+
+    <p>Atores: <a id="atores"></a></p>
+    <p> {{actors}} </p>
+
+    <p>Ano: <a id="ano"></a></p>
+    <p>{{year}}</p>
+    </p>
+
+
+    {{#if fav}}
+    <form action="/remove/{{id}}" method="POST" name="fav">
+        <label for="loginId" name="login">
+            <input type="submit" value="remover dos favoritos" name="fav" class="addFavoritos">            
+        </label>
+    </form>
+{{else}}
+  <form action="/{{id}}" method="POST" name="fav">
+        <label for="loginId" name="login">
+            <input type="submit" value="adicione aos favoritos" name="fav" class="addFavoritos">          
+        </label>
+    </form>
+{{/if}}
+
+    
+
+    <a href="/home">
+        <input type="button" value="Ver filmes" class="back">
+    </a>
+    <footer class="rodape">
+        <p>© Trabalho elaborado por:</P>
+        <p>▷ António Cachetas - Nº 30002421 ◉
+            Bruno Firmino - Nº 30002416 ◉
+            Caio Diego - N° 30003064 ◁</p>
+    </footer>
+
+</section>

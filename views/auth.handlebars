@@ -1,0 +1,102 @@
+<table class="menu">
+    <tr class="navegador">
+        <th class="logo">
+            <header class="cabecalho">
+
+                <a href="/home">
+                    <h1>Hollywood</h1>
+                </a>
+            </header>
+        </th>
+
+
+        <th class="menu">
+            <nav class="menu">
+                <ul class="menuLista">
+
+
+                    <li>
+                        <a href="/home"><input type="button" class="btnMenu" value="Filmes">
+                            </input>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/favorites"><input type="button" class="btnMenu" value="Favoritos">
+                            </input>
+                        </a>
+                    </li>
+
+
+
+                    <li id="login">
+                        <a id="loginU" class="btnMenu">{{name}}</a>
+                        <a href="/logout">
+                            <p id="logout">Terminar Sessão</p>
+                        </a>
+                    </li>
+
+                    <li id="pesquisa">
+
+                        <a id="pesquisaA" onclick="hide()">
+                            <img id="lupa" src="img/lupa.png" alt="lupa" srcset="img/lupa.svg" height="35">
+                        </a>
+                    </li>
+
+                    <li id="liBarraPesquisa">
+                        <input id="barraPesquisa" type="text" placeholder="nome de filme" />
+                    </li>
+                </ul>
+
+                </ul>
+            </nav>
+        </th>
+    </tr>
+</table>
+
+
+
+<nav>
+    <fieldset name="login">
+
+        <form action="/changepwd" method="POST" name="alterarPassword">
+            <h1>Alterar Password</h1>
+
+            <br>
+            <h3>Introduza a nova password</h3>
+
+            <p>
+                <label for="loginId" name="alterarPassword">
+                    <input type="email" id="loginId" name="email" placeholder="exemplo@email.com" value={{#if email}}
+                        {{email}} {{/if}}>
+                </label>
+                <br>
+                <label for="passwordId" name="login"></label>
+                <input type="password" id="passwordId" name="newPassword" placeholder="password nova">
+                </label>
+                <label for="passwordId" name="login"></label>
+                <input type="password" id="passwordId" name="newPassword2" placeholder="password nova">
+                </label>
+            </p>
+            <p>
+                <label for="btnLogin">
+                    <input type="submit" id="btnLogin" name="Enviar" value="Alterar">
+                </label>
+            </p>
+            <a href="/home">
+             <input type="button" id="btnLogin" name="Enviar" value="Cancelar">
+             </a>
+        </form>
+    </fieldset>
+</nav>
+
+
+<div class="rodape">
+    <section class="rodapeSection">
+        <footer class="rodapeIndex">
+            <p>© Trabalho elaborado por:</P>
+            <p>▷ António Cachetas - Nº 30002421 ◉
+                Bruno Firmino - Nº 30002416 ◉
+                Caio Diego - N° 30003064 ◁</p>
+        </footer>
+    </section>
+</div>

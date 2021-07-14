@@ -1,4 +1,4 @@
 # hollywood
 
-University work development of a Website using HTML5, CSS3 and Javascript as frontend, and implemented Node.Js as backend. The Website has implemented REST API, user registration and login forms, email confirmation, session cookie, Bcrypt hashing before store passwords in the database, interaction with PostgreSQL over ORM Sequelize, HTML views with Handlebars, etc.
+University work of a Website using HTML5, CSS3 and JavaScript as frontend, and implementation of NodeJS as backend. The Website was implemented using REST API and: allows user registration and login, email confirmation, cookie based sessions; does Bcrypt hashing before storing passwords in the database; interacts with PostgreSQL over ORM Sequelize; and has HTML views with Handlebars, etc.
 
